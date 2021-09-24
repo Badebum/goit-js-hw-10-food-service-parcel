@@ -6,17 +6,17 @@
   "homepage": "https://Badebum.github.io/goit-js-hw-10-food-service-parcel",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url/goit-js-hw-10-food-service-parcel/"
+    "build": "parcel build src/*.html --public-url/js-hw-10-food-service-parcel/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Badebum/goit-js-hw-10-food-service-parcel.git"
+    "url": "git+https://github.com/Badebum/js-hw-10-food-service-parcel.git"
   },
   "keywords": [],
   "author": "Andrey>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/Badebum/parcel-project-template/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
@@ -26,6 +26,8 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "handlebars": "^4.7.7"
+    "@pnotify/core": "^5.2.0",
+    "handlebars": "^4.7.7",
+    "lodash.debounce": "^4.0.8"
   }
 }
