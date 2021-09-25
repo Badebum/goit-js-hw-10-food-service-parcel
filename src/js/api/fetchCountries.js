@@ -7,5 +7,4 @@ function fetchCountries(searchQuery) {
     return response.json();
   });
 }
-
 export default { fetchCountries };

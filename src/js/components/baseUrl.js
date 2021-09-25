@@ -1,3 +1,3 @@
-const BASE_URL = 'https://restcountries.com/v3/name/';
+const BASE_URL = 'https://restcountries.com/v2/';
 
 export { BASE_URL };

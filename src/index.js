@@ -1,12 +1,15 @@
 import './styles.css';
 import API from './js/api/fetchCountries';
 import linksRef from './js/components/refs';
-import _debounce from 'lodash';
+// import _debounce from 'lodash';
+
 import { pnotifyError, closeNotice } from './js/components/notify';
 import createBaseMarkup from '../src/js/markup/createBaseMarkup';
 import createMarkup from '../src/js/markup/createMarkup';
-import countryCard from './templates/countryCard.hbs';
-import countriesList from './templates/countriesList.hbs';
+import countryCard from '../src/templates/countryCard.hbs';
+import countriesList from '../src/templates/countriesList.hbs';
+
+const _debounce = require('lodash.debounce');
 
 createBaseMarkup();
 
@@ -40,6 +43,6 @@ function inputChange({ target }) {
     });
 }
 
-const search = () => inputRef.addEventListener('input', _.debounce(inputChange, 500));
+const search = () => inputRef.addEventListener('input', _debounce(inputChange, 500));
 
 search();
